@@ -10,12 +10,11 @@ ul {
     align-items: center;
     gap: 16px;
     font-size: 18px;
-    color:#E5E7EB
+    color:#E5E7EB;
 }
 
-.header h3 {
-    font-size: 24px;
-    color: #F9FAF8;
+h2, h3, p {
+    color:#E5E7EB;
 }
 
 .main-logo {
@@ -36,7 +35,7 @@ body {
 .top {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(30, 30, 30);
     margin: 0;
 }
 
@@ -70,8 +69,8 @@ body {
     padding: 32px;
     align-self: center;
     border-radius: 12px;
-    border: 1px solid rgb(70, 0, 0);
-    box-shadow: 0 0 32px rgb(120, 0, 0);
+    border: 1px solid black;
+    box-shadow: 0 0 32px black;
 }
 
 .banner-text {
@@ -87,14 +86,12 @@ body {
     font-size: 48px;
     font-weight: 1000;
     margin: 0;
-    color: #F9FAF8;
 }
 
 .banner-text p {
     flex: 0 1 auto;
     font-size: 18px;
     margin: 0;
-    color: #E5E7EB;
 }
 
 .button-container {
@@ -104,43 +101,42 @@ body {
 }
 
 button {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     padding: 8px 24px;
-    background-color: #440000;
-    border-color: #440000;
+    background-color: black;
+    border-color: black;
+    color:#E5E7EB;
+    font-weight: 1000;
     border-style: solid;
     border-radius: 8px;
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .banner-image {
     flex: 1 0 auto;
-    background-color: gray;
     max-width: 400px;
     margin: 8px;
     height: auto;
-    
-    border-radius: 10px;
+    border-radius: 12px;
+    border: 1px solid black;
 }
 
 /*-----------------------------------mid-------------------------------------------*/
 
-.mid {
-    margin: 0;
-    padding: 0;
-    background-color: #440000;
-    text-align: center;
-    color:#E5E7EB
-}
-
 .mid h2 {
     margin: 0;
-    color: #E5E7EB;
     font-size: 48px;
     margin-bottom: 32px;
 }
 
-.images {
+.first-mid {
+    margin: 0;
+    padding: 64px 0;
+    background-color: #440000;
+    text-align: center;
+}
+
+.first-mid .images {
     display: flex;
     justify-content: center;
     gap: 64px;
@@ -154,23 +150,75 @@ button {
     box-shadow: 0 0 16px black;
  }
  
- .images img {
+ .first-mid .images img {
     flex: 0 0 auto;
     align-self: center;
  }
+
+.second-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    background-color: rgb(30, 30, 30);
+    padding: 64px 0;
+}
+
+.isaac-crying-card {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 64px #000000;
+}
+
+.isaac-crying-image {
+    flex: 1 1 auto;
+    max-width: 400px;
+    height: auto;
+}
+
+.isaac-crying-text {
+    text-align: center;
+}
+
+.isaac-crying-info {
+    border: 8px groove rgb(70, 70, 70);
+    padding: 8px;
+    text-align: center;
+    max-width: 400px;
+    font-size: 24px;
+}
+
+.second-mid h3 {
+    font-size: 32px;
+}
+
+
+
 
 .footer {
     border: 2px solid blue;
     display: flex;
 }
 
+
+
+
 .image-card:hover {
     border: 1px solid red;
-    box-shadow: 0 0 32px black;
     transform: scale(1.1);
+    box-shadow: 0 0 32px black;
  }
 
- .banner-image:hover {
-    box-shadow: 0 0 32px #440000;
-    transform: scale(1.1);
- }
+.banner-image:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    box-shadow: 0 0 32px black;
+}
+
+.play-button:hover {
+    border: 1px solid red;
+    transform: scale(1.2);
+}
