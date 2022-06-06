@@ -222,8 +222,13 @@ button {
 
 
 .footer {
-    border: 2px solid blue;
-    display: flex;
+    background-color: black;
+    text-align: center;
+    padding: 32px;
+}
+
+.footer h3 {
+    margin: 0;
 }
 
 
