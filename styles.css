@@ -167,7 +167,7 @@ button {
 .isaac-crying-card {
     display: flex;
     justify-content: center;
-    padding: 16px;
+    padding: 24px;
     border-radius: 12px;
     border: 1px solid rgb(0, 0, 0);
     box-shadow: 0 0 64px #000000;
@@ -195,6 +195,31 @@ button {
     font-size: 32px;
 }
 
+.third-mid {
+    background-color: #440000;
+    display: flex;
+    justify-content: center;
+    padding: 64px;
+}
+
+.third-mid h2, .third-mid h3 {
+    margin: 0;
+}
+
+.call-to-action {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    gap: 128px;
+    align-items: center;
+    box-shadow: 0 0 32px black;
+}
+
+.call-to-action button {
+    padding: 16px 32px;
+}
+
 
 
 
@@ -218,7 +243,7 @@ button {
     box-shadow: 0 0 32px black;
 }
 
-.play-button:hover {
+button:hover {
     border: 1px solid red;
     transform: scale(1.2);
 }
